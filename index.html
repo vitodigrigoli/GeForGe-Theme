@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/locomotive-scroll.css">
+	<script src="js/fontawesome.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
+
+</head>
+<body>
+	<div id="dark-mode-icon"><i class="fas fa-adjust"></i></div>
+
+	<main data-scroll-container>
+
+		<section class="cover dark-mode--change" data-scroll-section>
+
+			<div class="cover__text">
+				<h1 class="size-1" >
+						<span data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-direction="horizontal">Un <u>nuovo<span class="marker bg-red"></span></u> sito</span>
+						<span data-scroll data-scroll-speed="-3" data-scroll-position="top" data-scroll-direction="horizontal">next <u>level <span class="marker bg-yellow"></span></u></span>
+						<span data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-direction="horizontal">web dev <u>pro! <span class="marker bg-green"></span></u></span>
+				</h1>
+				<p class="size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium, nulla ut ornare rutrum, lorem est fringilla tortor.</p>
+			</div>
+
+			<div class="cover__scroll">
+				<p>Scroll</p>
+				<div class="cover__scroll__pointer"></div>
+			</div>
+
+			<div class="bubble bubble--large bg-green " id="bubble-1"></div>
+			<div class="bubble bubble--medium bg-green " id="bubble-2"></div>
+			<div class="bubble bubble--large bg-green" id="bubble-3"></div>
+			<div class="bubble bubble--small bg-green" id="bubble-4"></div>
+		</section>
+
+		<section class="media-affix dark-mode--change" data-scroll-section>
+			<div id="fixed-elements">
+
+				<div class="media-affix__title" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements" data-scroll-offset="-50%">
+					<h2 class="size-2">Lorem <span class="red">ipsum dolor </span>amet amet</h2>
+					<p class="size-3">Nulla pulvinar scelerisque pretium. Proin sit amet volutpat ipsum, ut iaculis urna.</p>
+				</div>
+
+				<div class="media-affix__container" >
+
+						<div class="media-affix__item" >
+							<div class="media-affix__item__image" data-scroll data-scroll-delay="0.1" data-scroll-speed="6" data-scroll-repeat>
+								<img src="img/img1.jpg" alt="">
+							</div>
+							<div class="media-affix__item__text" data-scroll data-scroll-delay="0.06" data-scroll-speed="6" data-scroll-repeat>
+								<h3 class="size-3">Lorem ipsum dolor sit amet</h3>
+								<p>Nulla pulvinar scelerisque pretium. Proin sit amet volutpat ipsum, ut iaculis urna.</p>
+							</div>
+
+						</div>
+
+					<div class="media-affix__item" >
+						<div class="media-affix__item__image" data-scroll data-scroll-delay="0.1" data-scroll-speed="6" data-scroll-repeat>
+							<img src="img/img2.jpg" alt="">
+						</div>
+						<div class="media-affix__item__text" data-scroll data-scroll-delay="0.06" data-scroll-speed="6" data-scroll-repeat>
+							<h3 class="size-3">Lorem ipsum dolor sit amet</h3>
+							<p>Nulla pulvinar scelerisque pretium. Proin sit amet volutpat ipsum, ut iaculis urna.</p>
+						</div>
+
+					</div>
+
+					<div class="media-affix__item" >
+						<div class="media-affix__item__image" data-scroll data-scroll-delay="0.1" data-scroll-speed="6" data-scroll-repeat>
+							<img src="img/img3.jpg" alt="">
+						</div>
+						<div class="media-affix__item__text" data-scroll data-scroll-delay="0.06" data-scroll-speed="6" data-scroll-repeat>
+							<h3 class="size-3">Lorem ipsum dolor sit amet</h3>
+							<p>Nulla pulvinar scelerisque pretium. Proin sit amet volutpat ipsum, ut iaculis urna.</p>
+						</div>
+
+					</div>
+
+
+					</div>
+
+			</div>
+		</section>
+
+		<section class="panel" data-scroll-section >
+			<div class="panel__text" data-scroll data-scroll-call="bg-green" data-scroll-repeat>
+				<h3 class="size-2">Lorem ipsum dolor sit amet</h3>
+				<p>Mauris pellentesque, magna ac scelerisque hendrerit, augue urna porttitor leo, ut euismod nisl nibh a arcu. In imperdiet mollis cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis elit dui, ultricies eu justo eget, interdum mollis nisl.</p>
+			</div>
+			<div class="panel__image" >
+				<img src="img/img4.jpg" alt="">
+			</div>
+		</section>
+
+	</main>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

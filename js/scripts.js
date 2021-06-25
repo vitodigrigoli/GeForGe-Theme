@@ -12,13 +12,7 @@ dark_icon.addEventListener('click', () =>{
 
 const scroll = new LocomotiveScroll({
 	el: document.querySelector('[data-scroll-container]'),
-	smooth: true,
-	smartphone: {
-		smooth: true
-	},
-	tablet: {
-		smooth: true
-	},
+	smooth: true
 })
 
 scroll.on('call', func => {

@@ -32,7 +32,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--blue: #12ABF6;
 }
 
-body{font-family: Montreal, sans-serif; overflow-x: hidden;}
+
+html {height: -webkit-fill-available;}
+body{min-height: 100vh;	min-height: -webkit-fill-available; font-family: Montreal, sans-serif; overflow-x: hidden;}
 section{ padding: 10vw 5vw;}
 h1, h2, h3, h4{margin-bottom: 20px;}
 p{font-size: 1.4em;}

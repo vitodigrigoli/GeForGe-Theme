@@ -33,7 +33,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body{min-height: 100vh; font-family: Montreal, sans-serif; overflow-x: hidden;}
-section{ padding: 10vw 5vw;}
+section{ max-width: 1600px; margin: 0 auto; padding: 10vw 5vw;}
 h1, h2, h3, h4{margin-bottom: 20px;}
 p{font-size: 1.4em;margin-block-end: 1.2em;}
 img{width: 100%; height: auto;}
@@ -138,13 +138,13 @@ u .marker{position: absolute; left: 0; bottom: 0; width: 100%; height: 10px; ani
 
 /* Cover
 --------------------------------------------------------------------------*/
-.cover{position: relative; overflow: hidden; height: 100vh; display: flex; align-items: center; justify-content: center;}
+.cover{position: relative; overflow: hidden; height: 100vh; min-width: 100vw; display: flex; align-items: center; justify-content: center;}
 .cover__text{position: relative; z-index: 200;}
 .cover__text h1 {text-transform: capitalize; text-align: center; }
 .cover__text p{margin-top: 50px; text-align: center;}
 .cover__text span{display: block}
 
-.cover__scroll{position: absolute; bottom: 0; display: flex; flex-direction: column; align-items: center }
+.cover__scroll{position: absolute; bottom: 3vh; display: flex; flex-direction: column; align-items: center }
 .cover__scroll__pointer{width: 10px; height: 10px; border-radius: 50%; background-color: black; animation: scroll_animation 2s infinite}
 .cover__scroll p{font-size: 18px; margin-bottom: 40px; font-weight: 600; animation: scroll_text_animation 2s infinite; letter-spacing: 5px;}
 

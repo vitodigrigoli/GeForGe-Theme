@@ -32,25 +32,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--blue: #12ABF6;
 }
 
-
-html {height: -webkit-fill-available;}
-body{min-height: 100vh;	min-height: -webkit-fill-available; font-family: Montreal, sans-serif; overflow-x: hidden;}
+body{min-height: 100vh; font-family: Montreal, sans-serif; overflow-x: hidden;}
 section{ padding: 10vw 5vw;}
 h1, h2, h3, h4{margin-bottom: 20px;}
-p{font-size: 1.4em;}
+p{font-size: 1.4em;margin-block-end: 1.2em;}
 img{width: 100%; height: auto;}
 
 @media (max-width: 425px) {
-	p{font-size: 1.2em;}
+	p{font-size: 1.2em; }
 }
 
 /* Helpers
 --------------------------------------------------------------------------*/
 
-.bg-red{background-color: var(--red)}
+.bg-red{background-color: var(--red) !important;}
 .bg-yellow{background-color: var(--yellow) !important;}
-.bg-green{background-color: var(--green)}
-.bg-blue{background-color: var(--blue)}
+.bg-green{background-color: var(--green) !important;}
+.bg-blue{background-color: var(--blue) !important;}
 
 .red{color: var(--red)}
 .yellow{color: var(--yellow)}
@@ -140,7 +138,7 @@ u .marker{position: absolute; left: 0; bottom: 0; width: 100%; height: 10px; ani
 
 /* Cover
 --------------------------------------------------------------------------*/
-.cover{position: relative; overflow: hidden; min-height: -webkit-fill-available; height: 100vh; display: flex; align-items: center; justify-content: center;}
+.cover{position: relative; overflow: hidden; height: 100vh; display: flex; align-items: center; justify-content: center;}
 .cover__text{position: relative; z-index: 200;}
 .cover__text h1 {text-transform: capitalize; text-align: center; }
 .cover__text p{margin-top: 50px; text-align: center;}
@@ -169,7 +167,7 @@ u .marker{position: absolute; left: 0; bottom: 0; width: 100%; height: 10px; ani
 /* Media Affix
 --------------------------------------------------------------------------*/
 
-.media-affix{min-height: 100vh; border: 1px solid red; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.media-affix{min-height: 100vh; display: flex; justify-content: space-between; flex-wrap: wrap; }
 .media-affix__title{ width: 40%; display: inline-block; margin-right: 9%;}
 .media-affix__container{ width: 50%; display: inline-block; vertical-align: top; background-color: white; position: relative;}
 
@@ -183,6 +181,7 @@ u .marker{position: absolute; left: 0; bottom: 0; width: 100%; height: 10px; ani
 	.media-affix__title,
 	.media-affix__container{ width: 100%;}
 	.media-affix__container{margin: 10vw 0;}
+	.media-affix__item{ margin-bottom: 10vw;}
 }
 
 @media (max-width: 425px) {
@@ -194,9 +193,9 @@ u .marker{position: absolute; left: 0; bottom: 0; width: 100%; height: 10px; ani
 
 /* Panel
 --------------------------------------------------------------------------*/
-.panel{height: 100vh; display: flex; justify-content: center; align-items: center; margin: 0 auto; transition: background-color 0.5s; transition-delay: 1s}
-.panel__text{width: 50%; border: 1px solid red;}
-.panel__text h3{ border: 1px solid blue; width: 150%; position: relative;}
+.panel{height: 100vh; background-color: white; display: flex; justify-content: center; align-items: center; margin: 0 auto; transition: background-color 0.5s; transition-delay: 1s}
+.panel__text{width: 50%; color: white;}
+.panel__text h3{ width: 150%; position: relative; color: white;}
 .panel__image{width: 50%;}
 
 

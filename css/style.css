@@ -136,7 +136,7 @@ h1, h2, h3, h4, p {color: white; mix-blend-mode: difference;}
 .bg-green h2,
 .bg-green h3,
 .bg-green h4,
-.bg-green p{mix-blend-mode: unset}
+.bg-green p{mix-blend-mode: unset; color: black;}
 
 
 @media (max-width: 425px) {

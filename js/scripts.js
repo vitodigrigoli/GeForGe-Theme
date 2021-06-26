@@ -14,6 +14,7 @@ const scroll = new LocomotiveScroll({
 	tablet: {
 		smooth: true
 	},
+	multiplier: 1
 })
 
 scroll.on('call', func => {

@@ -32,7 +32,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	--blue: #12ABF6;
 }
 
-body{min-height: 100vh; font-family: Montreal, sans-serif; overflow-x: hidden; background-color: #ececec; transition: 0.3s}
+body{min-height: 100vh; font-family: Montreal, sans-serif; overflow-x: hidden; background-color: white; transition: 0.3s}
 section{ max-width: 1600px; margin: 0 auto; padding: 10vw 5vw;}
 h1, h2, h3, h4{margin-bottom: 20px; color: white;}
 p{font-size: 1.4em;margin-block-end: 1.2em;}
@@ -173,9 +173,9 @@ h1, h2, h3, h4, p {color: white; mix-blend-mode: difference;}
 
 /* Media Affix
 --------------------------------------------------------------------------*/
-.media-affix{min-height: 100vh; display: flex; justify-content: space-between; flex-wrap: wrap; border: 1px solid blue;}
+.media-affix{min-height: 100vh; display: flex; justify-content: space-between; flex-wrap: wrap; }
 .media-affix__title{ width: 40%; display: inline-block; margin-right: 9%;}
-.media-affix__container{ overflow: hidden; width: 50%; height: 100%; display: inline-block; vertical-align: top; position: relative; border: 1px solid red;}
+.media-affix__container{ overflow: hidden; width: 50%; height: 100%; display: inline-block; vertical-align: top; position: relative;}
 
 .media-affix__item{position: relative; display: flex; justify-content: space-between; align-items: center;  }
 .media-affix__item__text{width: calc(100% - 300px);}

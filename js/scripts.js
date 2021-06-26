@@ -2,12 +2,7 @@
 const dark_icon = document.getElementById('dark-mode-icon')
 
 dark_icon.addEventListener('click', () =>{
-	console.log('click')
-	const section = document.getElementsByClassName('dark-mode--change')
-
-	for( let i=0; i < section.length; i++) {
-		section[i].classList.toggle('dark-mode')
-	}
+	document.getElementsByTagName('body')[0].classList.toggle('dark-mode')
 })
 
 const scroll = new LocomotiveScroll({
@@ -23,6 +18,6 @@ const scroll = new LocomotiveScroll({
 
 scroll.on('call', func => {
 
-	const section = document.getElementsByClassName('panel')[0].classList.toggle(func)
+	document.getElementsByTagName('body')[0].classList.toggle(func)
 
 });

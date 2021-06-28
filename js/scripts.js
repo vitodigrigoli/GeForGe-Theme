@@ -13,13 +13,11 @@ const scroll = new LocomotiveScroll({
 	},
 	tablet: {
 		smooth: true
-	},
-	multiplier: 1.3,
-	lerp: 0.1
+	}
 })
 
 scroll.on('call', func => {
 
-	document.getElementsByTagName('body')[0].classList.toggle(func)
+	document.getElementsByTagName('body')[0].className = func
 
 });

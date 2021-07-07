@@ -18,6 +18,13 @@ const scroll = new LocomotiveScroll({
 
 scroll.on('call', func => {
 
-	document.getElementsByTagName('body')[0].className = func
+	if(func === "bg-green")
+		document.getElementsByTagName('body')[0].classList.toggle("bg-green")
+
+	if(func === "bg-blue")
+		document.getElementsByTagName('body')[0].classList.toggle("bg-blue")
+
+	if(func === "bg-yellow")
+		document.getElementsByTagName('body')[0].classList.toggle("bg-yellow")
 
 });
